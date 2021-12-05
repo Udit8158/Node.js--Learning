@@ -29,19 +29,28 @@ const os = require("os");
 
 
 //http module(creating a http server)
+// let's play with http 
 const http = require("http");  //import http
 const port = process.env.PORT || 3000; //define a port here the enviornment port or any givven(like 3000 or 8000)
 const hostname = '127.0.0.1';
 const server = http.createServer((req,res)=>{
-    res.statusCode = 200;
     res.setHeader("Content-Type","text/html");
-    res.write("Hi");
-    res.end(`<h2>Welcome</h2>`);
+    console.log(req.url);
+    res.statusCode == 200;
+    if (req.url == "/"){
+        res.statusCode = 200;
+        data = fs.readFileSync("02_index.html","utf-8");
+        res.end(data);
+    }
+    else{
+        res.statusCode = 200;
+        res.end(`<h2>Welcome</h2>`);
+    }
 });
 server.listen(port,hostname,()=>{
     console.log(`server is running on http://${hostname}:${port}`);
 })
 
 //https module
-const https = require("https");
+// const https = require("https");
 
