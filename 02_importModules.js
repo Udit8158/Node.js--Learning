@@ -36,15 +36,19 @@ const hostname = '127.0.0.1';
 const server = http.createServer((req,res)=>{
     res.setHeader("Content-Type","text/html");
     console.log(req.url);
-    res.statusCode == 200;
+    // res.statusCode == 200;
     if (req.url == "/"){
         res.statusCode = 200;
-        data = fs.readFileSync("02_index.html","utf-8");
+        data = fs.readFileSync("02_index.html","utf-8");  //this is a synchronus call to read file
         res.end(data);
     }
-    else{
+    else if (req.url == "/about"){
         res.statusCode = 200;
-        res.end(`<h2>Welcome</h2>`);
+        res.end(`<h2>This is an about page</h2>`);
+    }
+    else{
+        res.statusCode = 404;
+        res.end('<h1> Not Found</h1> <p> Hey this page was not found on this server</p>');
     }
 });
 server.listen(port,hostname,()=>{
