@@ -52,9 +52,12 @@ const server = http.createServer((req,res)=>{
     }
 });
 server.listen(port,hostname,()=>{
-    console.log(`server is running on http://${hostname}:${port}`);
+    // console.log(`server is running on http://${hostname}:${port}`);
 })
 
-//https module
-// const https = require("https");
+//Path module
+const path = require('path');
+
+let newPath = path.join('home','udit','docs');
+console.log(newPath); //It create a path ( eg - home\udit\docs)
 
