@@ -5,7 +5,7 @@ const port = '80';
 
 
 //Serving static files in static folder
-app.use('/static',express.static('static')); //Here first static is the location on our website and second is the folder name.
+app.use('/staticfiles',express.static('static')); //Here first static is the location on our website and second is the folder name.
 
 //Setting pug as view engine or template engine
 app.set('view engine', 'pug')  //Always refer docs and google
