@@ -88,3 +88,23 @@
 .card p {
     padding: 28px;
 }
+
+/* Sponser session  */
+
+.sponsorSection{
+    height: 40vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+.sponsorsCard{
+    display: flex;
+    flex-direction: column;
+}
+.sponsors{
+    border: 2px solid black;
+    width: 30%;
+}
+#amazon{
+    background-image: url('amazon.png');
+}
