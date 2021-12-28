@@ -9,7 +9,7 @@
 
 /* NAVBAR */
 .navBar{
-    background-color: rgb(78, 74, 74);
+    background-color: rgb(78, 74, 78);
     height: 12vh;
     display: flex;
     align-items: center;
@@ -52,13 +52,13 @@
     font-family: 'Source Code Pro', monospace;
     font-style: italic;
     font-weight: bold;
-    color: rgb(109, 73, 16);
+    color: rgb(231, 50, 50);
 }
 
 /* Our Mission section */
 .cardContainer{
     /* background-color: yellow; */
-    height: 50vh;
+    height: 40vh;
     margin-top: 40px;
     font-family: 'Source Code Pro', monospace;
 }
@@ -92,19 +92,26 @@
 /* Sponser session  */
 
 .sponsorSection{
-    height: 40vh;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
+    height: 50vh;
+    background-color: rgb(139, 139, 170);
+}
+.sponsorSection h2{
+    width: 485px;
+    margin: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    font-weight: bolder;
 }
 .sponsorsCard{
     display: flex;
-    flex-direction: column;
+    margin-top: 100px;
+    justify-content: space-around;
 }
-.sponsors{
-    border: 2px solid black;
-    width: 30%;
-}
-#amazon{
-    background-image: url('amazon.png');
+.sponsorsBox{
+    /* border: 2px solid black; */
+    height: 32vh;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

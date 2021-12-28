@@ -1,18 +1,9 @@
-//- Here I write pug in pug not in html 
+extends base.pug 
 
-doctype html
-html
-  head 
-    title Udit's Dance Website 
-    style
-      include ../static/style.css
-  //- STARTING NAVBAR (SEE THE CODE CAREFULLY)
-  body 
-    nav.navBar 
-      ul 
-        li #[a(href = '/') Home]
-        li #[a(href = '/') About]
-        li #[a(href = '/') Contact Us]
+block style 
+    style 
+        include ../static/style.css
+block content
     div.welcomeContainer
       h1 Welcome to Udit's Dance Academy 
       p Starting of a new dance era

@@ -1,0 +1,1 @@
+Here I am also learning pug templete inheritence so there are lots of files in the views directory.
