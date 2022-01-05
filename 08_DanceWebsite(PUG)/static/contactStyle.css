@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+h1{
+    text-align: center;
+    margin: 30px 0px;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myInput{
+    width: 70%;
+    padding: 13px;
+    border: 2px solid rgb(216, 141, 141);
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 19px;
+}
+.myBtn{
+    width: 72%;
+    padding: 13px;
+    border: 2px solid rgb(216, 141, 141);
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 19px;
+}
