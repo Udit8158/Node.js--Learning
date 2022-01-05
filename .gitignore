@@ -1,4 +1,5 @@
 /node_modules
 package-lock.json
 package.json
-/05_ExpressInJs/node_modules 
+/05_ExpressInJs/node_modules
+09_MongooseDemo/node_modules

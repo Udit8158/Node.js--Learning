@@ -35,7 +35,6 @@ app.get('/contact', function (req, res) {
   })
 
 
-
 //STARTING SERVER   
 app.listen(port,()=>{
     console.log(`Server is running on http://${hostname}:${port}`);
